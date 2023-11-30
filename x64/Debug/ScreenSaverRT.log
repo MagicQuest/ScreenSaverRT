@@ -1,0 +1,6 @@
+﻿  ScreenSaverRT.cpp
+  if you edit the vertex shader or pixel shader you GYATT to update the resource file unfortunately (i also could've just used Direct2D but i think D3D gives me the BEST performance POSSIBLE (pure speculation))
+E:\Users\megal\source\repos\ScreenSaverRT\Direct3D.h(225,14): warning C4244: '=': conversion from 'int' to 'FLOAT', possible loss of data
+E:\Users\megal\source\repos\ScreenSaverRT\Direct3D.h(226,15): warning C4244: '=': conversion from 'int' to 'FLOAT', possible loss of data
+E:\Users\megal\source\repos\ScreenSaverRT\ScreenSaverRT.cpp(166,24): warning C4312: 'type cast': conversion from 'int' to 'HWND' of greater size
+  ScreenSaverRT.vcxproj -> E:\Users\megal\source\repos\ScreenSaverRT\x64\Debug\ScreenSaverRT.exe
