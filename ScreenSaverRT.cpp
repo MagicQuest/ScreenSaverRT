@@ -164,7 +164,7 @@ int WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int n
     }
     else if (strncmp("/p", lpCmdLine, 2) == 0) {
         HWND hparwnd = (HWND)stoi(string(lpCmdLine).substr(3));
-        MessageBoxA(NULL, &(string("patching through ") + std::to_string((LONG_PTR)hparwnd))[0], "NIGGER", MB_OK);
+        MessageBoxA(NULL, &(string("patching through ") + std::to_string((LONG_PTR)hparwnd))[0], "NIGGER", MB_OK); //what the hell kind of magic was i doing with that string bro
         RECT rc; GetWindowRect(hparwnd, &rc);
         int w = rc.right - rc.left;
         int h = rc.bottom - rc.top;
@@ -173,7 +173,12 @@ int WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int n
         SaverPrereq(CreateWindowEx(0, TEXT("ScrClass"), TEXT(""), WS_CHILD | WS_VISIBLE, 0, 0, w, h, hparwnd, NULL, hInstance, NULL)/*;&id); */ , false);
     }else {
         //SetCursor(NULL);
-        /*HWND hthis = */SaverPrereq(CreateWindowEx(0, TEXT("ScrClass"), TEXT(""), WS_POPUP | WS_VISIBLE, 0, 0, 1920, 1080, NULL, NULL, hInstance, NULL), true);
+        //dawg i ran the screen saver on a bigger screen and was surprised that my screen saver didn't cover the whole screen (i was hard coding the size right here)
+        //i feel like i THOUGHT about i fixing it but i forgot
+        int screenWidth = GetSystemMetrics(SM_CXSCREEN);
+        int screenHeight = GetSystemMetrics(SM_CYSCREEN);
+
+        /*HWND hthis = */SaverPrereq(CreateWindowEx(0, TEXT("ScrClass"), TEXT(""), WS_POPUP | WS_VISIBLE, 0, 0, screenWidth, screenHeight, NULL, NULL, hInstance, NULL), true);
 
         //for (int i = 0; i < 1000; i++) {
         //    circles[i] = RECT{ rand() % 1250 + 50,rand() % 600 + 50, rand() % 2 == 0 ? 2 : -2, rand() % 2 == 0 ? 2 : -2 };

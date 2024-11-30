@@ -1,0 +1,16 @@
+﻿  compilation object save succeeded; see E:\Users\megal\source\repos\ScreenSaverRT\x64\Release\PixelShader.cso
+  compilation object save succeeded; see E:\Users\megal\source\repos\ScreenSaverRT\x64\Release\VertexShader.cso
+  ScreenSaverRT.cpp
+  if you edit the vertex shader or pixel shader you GYATT to update the resource file unfortunately (i also could've just used Direct2D but i think D3D gives me the BEST performance POSSIBLE (pure speculation))
+E:\Users\megal\source\repos\ScreenSaverRT\Direct3D.h(225,14): warning C4244: '=': conversion from 'int' to 'FLOAT', possible loss of data
+  (compiling source file 'ScreenSaverRT.cpp')
+  
+E:\Users\megal\source\repos\ScreenSaverRT\Direct3D.h(226,15): warning C4244: '=': conversion from 'int' to 'FLOAT', possible loss of data
+  (compiling source file 'ScreenSaverRT.cpp')
+  
+E:\Users\megal\source\repos\ScreenSaverRT\ScreenSaverRT.cpp(166,24): warning C4312: 'type cast': conversion from 'int' to 'HWND' of greater size
+  Generating code
+  Previous IPDB and IOBJ mismatch, fall back to full compilation.
+  All 106 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  ScreenSaverRT.vcxproj -> E:\Users\megal\source\repos\ScreenSaverRT\x64\Release\ScreenSaverRT.exe
